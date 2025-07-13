@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MadhavParth Bakery</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: #fffaf5;
+      color: #5c3b1e;
+      overflow-x: hidden;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 30px;
+      background: #ffe4e1;
+      position: sticky;
+      top: 0;
+      z-index: 10;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .logo {
+      font-size: 2em;
+      font-weight: bold;
+      color: #d36d6d;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+    }
+
+    nav a {
+      margin: 0 12px;
+      text-decoration: none;
+      color: #d36d6d;
+      font-weight: bold;
+      transition: color 0.3s;
+      font-size: 1.1em;
+    }
+
+    nav a:hover {
+      color: #a0522d;
+    }
+
+    .hero {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 80px 20px;
+      background: url('https://images.unsplash.com/photo-1509042239860-f550ce710b93') center/cover no-repeat;
+      color: white;
+      position: relative;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 1;
+      max-width: 600px;
+    }
+
+    .hero h1 {
+      font-size: 3em;
+      margin-bottom: 20px;
+      animation: slideFadeIn 1s forwards;
+    }
+
+    .hero p {
+      font-size: 1.3em;
+      margin-bottom: 30px;
+      animation: slideFadeIn 1s 0.5s forwards;
+    }
+
+    .hero .btn {
+      display: inline-block;
+      padding: 15px 30px;
+      background: #ff9aa2;
+      color: white;
+      border: none;
+      border-radius: 30px;
+      font-size: 1em;
+      text-decoration: none;
+      cursor: pointer;
+      animation: slideFadeIn 1s 1s forwards;
+      transition: background 0.3s;
+    }
+
+    .hero .btn:hover {
+      background: #ff6f91;
+    }
+
+    @keyframes slideFadeIn {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      text-align: center;
+    }
+
+    section h2 {
+      font-size: 2.4em;
+      color: #d36d6d;
+      margin-bottom: 20px;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+      gap: 20px;
+      margin-top: 30px;
+    }
+
+    .gallery img {
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.4s;
+    }
+
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+
+    .contact-info p {
+      margin: 8px 0;
+      font-size: 1.1em;
+    }
+
+    footer {
+      background: #ffe4e1;
+      padding: 20px;
+      text-align: center;
+      font-size: 0.9em;
+      color: #5c3b1e;
+    }
+
+    @media(max-width:600px) {
+      .hero h1 {
+        font-size: 2.2em;
+      }
+      .hero p {
+        font-size: 1em;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo">MadhavParth Bakery🌻🍰</div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero" id="home">
+    <div class="hero-content">
+      <h1>Welcome to MadhavParth Bakery</h1>
+      <p>Where every bite is a sprinkle of happiness! 🎂</p>
+      <a href="#gallery" class="btn">Explore Our Treats</a>
+    </div>
+  </section>
+
+  <section id="about">
+    <h2>About Us</h2>
+    <p>Meet Madhav & Parth — two best friends with big hearts, even bigger dreams, and a shared love for baking! 🧁💫 What started as late-night kitchen experiments turned into a cozy little bakery filled with joy, flavor, and friendship. 🥐🎂
+
+At MadhavParth Bakery, every treat is handcrafted with love and care — from melt-in-your-mouth cookies 🍪 to fluffy cupcakes and dreamy cakes 🎉🍓. Madhav brings the magic, Parth brings the precision, and together they whip up pure happiness in every bite! 💕👬
+
+Whether you’re celebrating a milestone or just want to make your day sweeter, stop by and say hello. Because with Madhav & Parth, every dessert comes with a smile! 😊🍞🎀
+
+ 💖</p>
+  </section>
+
+  <section id="services">
+    <h2>Our Services</h2>
+    <p>🧁 Custom Cupcakes<br>🍰 Birthday & Wedding Cakes<br>🍪 Cookies & Treat Boxes<br>🍞 Freshly Baked Bread<br>🎁 Gift Hampers & Event Catering</p>
+  </section>
+
+  <section id="gallery">
+    <h2>Our Gallery</h2>
+    <div class="gallery">
+      <img src="https://m.media-amazon.com/images/I/81s7cs3TCVL.jpg" alt="Strawberry Cake">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIucwp5S3gu1_PSGzpqGXexddwDwbToTzvQ&s"alt="Cupcakes with Toppings">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwRjDATw61b8JHHPYsZi-pXIXAko6QN2HMA&s" alt="Decorated Cookies">
+      <img src="https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?cs=srgb&dl=pexels-teejay-1362534.jpg&fm=jpg"alt="icecream">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThy5Iimq6yWMDahcnkQfnnKuu5iBYew1YC3Q&s"alt="Doracakes">
+      <img src="https://www.pillsbury.in/wp-content/uploads/2021/09/Waffle.jpg" alt="Waffles">
+    </div>
+  </section>
+
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+      <p>📍 <strong>Address:</strong> 123 Cake town, Sprinkle street,Lucknow India</p>
+      <p>📞 <strong>Phone:</strong> +91-9876543210</p>
+      <p>📧 <strong>Email:</strong> hello@madhavparthbakery.com</p>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 MadhavParth Bakery — Made with Love & Butter 🧈</p>
+  </footer>
+
+  <script>
+    // Smooth scroll for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', e => {
+        e.preventDefault();
+        document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+
+</body>
+</html>
