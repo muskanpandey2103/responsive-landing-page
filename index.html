@@ -4,6 +4,13 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>MadhavParth Bakery</title>
+
+  <!-- AOS CSS -->
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+  <!-- Animate.css -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+
   <style>
     body {
       margin: 0;
@@ -72,13 +79,11 @@
     .hero h1 {
       font-size: 3em;
       margin-bottom: 20px;
-      animation: slideFadeIn 1s forwards;
     }
 
     .hero p {
       font-size: 1.3em;
       margin-bottom: 30px;
-      animation: slideFadeIn 1s 0.5s forwards;
     }
 
     .hero .btn {
@@ -91,19 +96,11 @@
       font-size: 1em;
       text-decoration: none;
       cursor: pointer;
-      animation: slideFadeIn 1s 1s forwards;
       transition: background 0.3s;
     }
 
     .hero .btn:hover {
       background: #ff6f91;
-    }
-
-    @keyframes slideFadeIn {
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
     }
 
     section {
@@ -163,7 +160,7 @@
 <body>
 
   <header>
-    <div class="logo">MadhavParth Bakery🌻🍰</div>
+    <div class="logo animate__animated animate__bounceInDown">MadhavParth Bakery🌻🍰</div>
     <nav>
       <a href="#home">Home</a>
       <a href="#about">About</a>
@@ -177,11 +174,11 @@
     <div class="hero-content">
       <h1>Welcome to MadhavParth Bakery</h1>
       <p>Where every bite is a sprinkle of happiness! 🎂</p>
-      <a href="#gallery" class="btn">Explore Our Treats</a>
+      <a href="#gallery" class="btn animate__animated animate__pulse animate__infinite">Explore Our Treats</a>
     </div>
   </section>
 
-  <section id="about">
+  <section id="about" data-aos="fade-up">
     <h2>About Us</h2>
     <p>Meet Madhav & Parth — two best friends with big hearts, even bigger dreams, and a shared love for baking! 🧁💫 What started as late-night kitchen experiments turned into a cozy little bakery filled with joy, flavor, and friendship. 🥐🎂
 
@@ -192,27 +189,27 @@ Whether you’re celebrating a milestone or just want to make your day sweeter, 
  💖</p>
   </section>
 
-  <section id="services">
+  <section id="services" data-aos="zoom-in">
     <h2>Our Services</h2>
     <p>🧁 Custom Cupcakes<br>🍰 Birthday & Wedding Cakes<br>🍪 Cookies & Treat Boxes<br>🍞 Freshly Baked Bread<br>🎁 Gift Hampers & Event Catering</p>
   </section>
 
   <section id="gallery">
-    <h2>Our Gallery</h2>
+    <h2 data-aos="fade-up">Our Gallery</h2>
     <div class="gallery">
-      <img src="https://m.media-amazon.com/images/I/81s7cs3TCVL.jpg" alt="Strawberry Cake">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIucwp5S3gu1_PSGzpqGXexddwDwbToTzvQ&s"alt="Cupcakes with Toppings">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwRjDATw61b8JHHPYsZi-pXIXAko6QN2HMA&s" alt="Decorated Cookies">
-      <img src="https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?cs=srgb&dl=pexels-teejay-1362534.jpg&fm=jpg"alt="icecream">
-      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThy5Iimq6yWMDahcnkQfnnKuu5iBYew1YC3Q&s"alt="Doracakes">
-      <img src="https://www.pillsbury.in/wp-content/uploads/2021/09/Waffle.jpg" alt="Waffles">
+      <img src="https://m.media-amazon.com/images/I/81s7cs3TCVL.jpg" alt="Strawberry Cake" data-aos="flip-left">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTaIucwp5S3gu1_PSGzpqGXexddwDwbToTzvQ&s" alt="Cupcakes" data-aos="flip-up">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTKwRjDATw61b8JHHPYsZi-pXIXAko6QN2HMA&s" alt="Cookies" data-aos="flip-right">
+      <img src="https://images.pexels.com/photos/1362534/pexels-photo-1362534.jpeg?cs=srgb&dl=pexels-teejay-1362534.jpg&fm=jpg" alt="Ice Cream" data-aos="fade-up">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThy5Iimq6yWMDahcnkQfnnKuu5iBYew1YC3Q&s" alt="Doracakes" data-aos="fade-down">
+      <img src="https://www.pillsbury.in/wp-content/uploads/2021/09/Waffle.jpg" alt="Waffles" data-aos="fade-up">
     </div>
   </section>
 
-  <section id="contact">
+  <section id="contact" data-aos="fade-up">
     <h2>Contact Us</h2>
     <div class="contact-info">
-      <p>📍 <strong>Address:</strong> 123 Cake town, Sprinkle street,Lucknow India</p>
+      <p>📍 <strong>Address:</strong> 123 Cake town, Sprinkle street, Lucknow, India</p>
       <p>📞 <strong>Phone:</strong> +91-9876543210</p>
       <p>📧 <strong>Email:</strong> hello@madhavparthbakery.com</p>
     </div>
@@ -222,6 +219,15 @@ Whether you’re celebrating a milestone or just want to make your day sweeter, 
     <p>&copy; 2025 MadhavParth Bakery — Made with Love & Butter 🧈</p>
   </footer>
 
+  <!-- AOS JS -->
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+  <!-- GSAP -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+
+  <!-- Lenis Smooth Scroll -->
+  <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.31/bundled/lenis.min.js"></script>
+
   <script>
     // Smooth scroll for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -230,7 +236,52 @@ Whether you’re celebrating a milestone or just want to make your day sweeter, 
         document.querySelector(anchor.getAttribute('href')).scrollIntoView({ behavior: 'smooth' });
       });
     });
+
+    // Initialize AOS
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+
+    // GSAP entry animation
+    gsap.from(".hero h1", {
+      opacity: 0,
+      y: -50,
+      duration: 1,
+      delay: 0.2
+    });
+
+    gsap.from(".hero p", {
+      opacity: 0,
+      y: 30,
+      duration: 1,
+      delay: 0.5
+    });
+
+    gsap.from(".hero .btn", {
+      opacity: 0,
+      scale: 0.8,
+      duration: 1,
+      delay: 0.8
+    });
+
+    // Lenis smooth scroll
+    const lenis = new Lenis();
+    function raf(time) {
+      lenis.raf(time);
+      requestAnimationFrame(raf);
+    }
+    requestAnimationFrame(raf);
   </script>
 
 </body>
 </html>
+
+     
+      
+   
+
+  
+
+  
+  
